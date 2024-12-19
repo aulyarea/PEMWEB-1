@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <h1>Form validasi data diri</h1>
+    <form onsubmit="return validasiForm()">
+        <label for="nama">Nama pelanggan</label>
+        <input type="text" name="nama" id="nama" placeholder="maxsimum 30 karakter"><br>
+        <br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" type="email" autocomplete="off" placeholder="masukkan email"><br>
+        <br>
+        <label for="jam">Jam keberangkatan</label>
+        <input type="text" name="jam" id="jam" type="jam"><br>
+        <br>
+        <label for="kota">Tujuan Keberangkatan :</label>
+        <select name="kota" id="kota">
+            <option value="">~ Silahkan Pilih ~</option>
+            <option value="DEPOK-BOGOR">DEPOK-BOGOR</option>
+            <option value="JAKARTA">JAKARTA</option>
+            <option value="BANDUNG">BANDUNG</option>
+            <option value="SURABAYA">SURABAYA</option>
+        </select><br>
+        <br>
+        <label for="tiket">Jumlah Tiket</label>
+        <input type="number" name="tiket" id="tiket" ><br>
+        <br>
+        <input type="submit" value="submit">
+        <br>
+        <br>
+        <p>--------------------------------------------------------------------------------------</p>
+        <br>
+
+        <p>Nama pelanggan : <span id="namapelanggan"></span></p>
+        <p>Email : <span id="emailpelanggan"></span></p>
+        <p>Jam keberangkatan : <span id="jampergi"></span></p>
+        <p>Tujuan keberangkatan <span id="kotatujuan"></span></p>
+        <p>Jumlah tiket : <span id="tiketanda"></span></p>
+    </form>
+
+        <script>
+            function validasiForm(){
+
+                let nama = document.getElementById("nama")
+                let email = document.getElementById("email")
+                let jam = document.getElementById("jam")
+                let kota = document.getElementById("kota")
+                let tiket = document.getElementById("tiket")
+
+                let isvalid = true
+
+                if (nama === ""){
+                    alert("Nama tidak boleh kosong");
+                    isvalid = false;
+                }
+
+                // let emailRegex = /^[^\s@]+@[^\s@]=\.[^\s@]+$/;
+                if (email === ""){
+                    alert("Email tidak boleh kosong");
+                    isvalid = false;
+                }
+                
+                if (jam === ""){
+                    alert("jam wajib diisi");
+                    isvalid = false;
+                }
+
+                if (kota === ""){
+                    alert("kota wajib dipilih");
+                    isvalid = false;
+                }
+                
+                 if (isNaN(tiket)|| tiket <= 10){
+                     alert("tiket wajib diisi");
+                     isvalid = false;
+                }
+
+                if (isvalid){
+                    alert("Formulir valid")
+                    return true
+                }
+
+                else {
+                    return false
+                }
+                
+                
+                document.getElementById('namapelanggan').innerHTML = nama
+                document.getElementById('emailpelanggan').innerHTML = email
+                document.getElementById('jamkeberangkatan').innerHTML = jam
+                document.getElementById('kotatujuan').innerHTML = kota
+                document.getElementById('tiketanda').innerHTML = tiket
+    
+            }
+        </script>
+</body>
+</html>

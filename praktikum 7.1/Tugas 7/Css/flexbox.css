@@ -1,0 +1,47 @@
+
+body {
+    margin: auto;
+    
+}
+
+.img1{
+    padding-right: 5px;
+}
+
+.img2{
+    padding-right: 5px;
+}
+.img3{
+    padding-right: 5px;
+}
+.img4{
+    padding-right: 5px;
+}
+.img5{
+    padding-right: 5px;
+}
+.img6{
+    padding-right: 5px;
+}
+.img7{
+    padding-right: 5px;
+}
+.img8{
+    padding-right: 5px;
+}
+
+#conteiner {
+    display: flex;
+    width: 100px;
+    height: 90px;
+    padding: 5px;
+    margin: 12px;
+}
+
+.conteiner {
+    display: flex;
+    width: 100px;
+    height: 96.3px;
+    padding: 5px;
+    margin: 12px;
+}

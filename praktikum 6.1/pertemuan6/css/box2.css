@@ -1,0 +1,11 @@
+/* css untuk cssbox2.html */
+.img-item  {
+    width: 150px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+.img {
+    margin-right: 10px;
+}

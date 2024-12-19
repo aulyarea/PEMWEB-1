@@ -1,0 +1,93 @@
+#header {
+    background-color: #FBD288;
+    text-align: center;
+    border: 1px solid #FBD288;
+    color: #1E3E62;
+}
+blockquote {
+    background-color: #F09319;
+    border-top: dashed;
+    border-left: dashed;
+    margin-top: 10px;
+}
+.menu {
+    float: right;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80%;
+    position: sticky;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+.menu ul li {
+    float: left;
+}
+.menu ul li a {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 5px 0px 5px;
+}
+.gambar {
+   display: flex;
+   margin-top: 50px;
+   align-items: center;
+   justify-content: center;
+}
+.isi {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#profil {
+    background-color: #FFCCEA;
+    & h1{
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+.koleksi {
+    background-color: black;
+    align-items: center;
+}
+.koleksi img {
+    width: 23%;
+    border: 1px solid #B19470;
+}
+.promo {
+    text-align: center;
+    color: #54473F;
+}
+.promo h3 {
+    color: #664343;
+}
+.footer {
+    display: flex;
+    background-color: #F5EFFF;
+    margin: auto;
+    list-style-type: none;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 5px 0px 5px;
+    word-spacing: 10px;
+    align-items: center;
+}
+.footer li {
+    text-align: center;
+    padding: 0px 5px 0px 5px;
+    word-spacing: 10px;
+    align-items: center; 
+}
+.footer li a {
+    text-align: center;
+}
+.isi::first-letter {
+    font-size: 70px;
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+}
